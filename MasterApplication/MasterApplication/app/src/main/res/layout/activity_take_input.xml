@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".TakeInput"
+    tools:layout_editor_absoluteX="20dp"
+    tools:layout_editor_absoluteY="52dp">
+
+    <TextView
+        android:id="@+id/take_inputA"
+        android:layout_width="110dp"
+        android:layout_height="28dp"
+        android:background="#8A9390"
+        android:gravity="center"
+        android:text="Matrix A input"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.113" />
+
+    <TextView
+        android:id="@+id/powerConsumed"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.697"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/rows_a"
+        android:layout_width="138dp"
+        android:layout_height="39dp"
+        android:background="#2F3649"
+        android:gravity="center"
+        android:hint="number of rows"
+        android:textColor="#ECEFF4"
+        android:textColorHint="#F3EFEF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.191" />
+
+    <EditText
+        android:id="@+id/columns_a"
+        android:layout_width="139dp"
+        android:layout_height="40dp"
+        android:background="#2F3649"
+        android:gravity="center"
+        android:hint="number of col"
+        android:textColor="#F6F3F3"
+        android:textColorHint="#F6F3F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.271" />
+
+    <EditText
+        android:id="@+id/matrix_a"
+        android:layout_width="135dp"
+        android:layout_height="73dp"
+        android:background="#435995"
+        android:gravity="center"
+        android:hint="Matrix A"
+        android:textColor="#F6F2F2"
+        android:textColorHint="#F8F5F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.389" />
+
+    <TextView
+        android:id="@+id/take_inputB"
+        android:layout_width="113dp"
+        android:layout_height="28dp"
+        android:background="#FF8A9390"
+        android:gravity="center"
+        android:text="Matrix B input"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.899"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.113" />
+
+    <EditText
+        android:id="@+id/rows_b"
+        android:layout_width="137dp"
+        android:layout_height="40dp"
+        android:background="#2F3649"
+        android:gravity="center"
+        android:hint="number of rows"
+        android:textColor="#F4F1F1"
+        android:textColorHint="#F8F3F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <EditText
+        android:id="@+id/columns_b"
+        android:layout_width="141dp"
+        android:layout_height="41dp"
+        android:background="#2F3649"
+        android:gravity="center"
+        android:hint="number of col"
+        android:textColor="#F3EBEB"
+        android:textColorHint="#FAF7F7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.272" />
+
+    <EditText
+        android:id="@+id/matrix_b"
+        android:layout_width="140dp"
+        android:layout_height="73dp"
+        android:background="#FF435995"
+        android:gravity="center"
+        android:hint="Matrix B"
+        android:textColor="#F6F1F1"
+        android:textColorHint="#F8F5F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.389" />
+
+    <Button
+        android:id="@+id/input_submit"
+        android:layout_width="147dp"
+        android:layout_height="70dp"
+        android:background="#838FAF"
+        android:onClick="compute"
+        android:text="Matrix Multiplication on Slave"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56" />
+
+    <Button
+        android:id="@+id/input_compute_on_master"
+        android:layout_width="155dp"
+        android:layout_height="70dp"
+        android:background="#FF838FAF"
+        android:onClick="computeOnMaster"
+        android:text="Matrix Multiplication on master"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56" />
+
+    <TextView
+        android:id="@+id/et1"
+        android:layout_width="363dp"
+        android:layout_height="48dp"
+        android:background="#807C7C"
+        android:gravity="center"
+        android:hint="Execution_time when computed on master"
+        android:textColor="#F6F2F2"
+        android:textColorHint="#F8F5F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_compute_on_master"
+        app:layout_constraintVertical_bias="0.395"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/et2"
+        android:layout_width="364dp"
+        android:layout_height="114dp"
+        android:background="#807C7C"
+        android:gravity="center"
+        android:hint="Result of Matrix Multiplication for Master Device"
+        android:textColor="#F6F2F2"
+        android:textColorHint="#F8F5F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_compute_on_master"
+        app:layout_constraintVertical_bias="0.91"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
