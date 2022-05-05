@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <TextView
+        android:id="@+id/batteryPercentage"
+        android:layout_width="326dp"
+        android:layout_height="33dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.341"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="417dp"
+        android:layout_height="39dp"
+        android:background="#82979A"
+        android:gravity="center"
+        android:hint="Latitude"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.011"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/et"
+        android:layout_width="410dp"
+        android:layout_height="48dp"
+        android:background="#63717C"
+        android:gravity="center"
+        android:hint="Execution time"
+        android:textColor="#F8F5F5"
+        android:textColorHint="#F6F5F5"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="410dp"
+        android:layout_height="63dp"
+        android:background="#646773"
+        android:onClick="enterMatrices"
+        android:text="Enter Matrix A and Matrix  B"
+        android:textAllCaps="false"
+        android:textColor="#F6F5F5"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.709"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/longitude"
+        android:layout_width="416dp"
+        android:layout_height="33dp"
+        android:background="#82979A"
+        android:gravity="center"
+        android:hint="Longitude"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.131"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="407dp"
+        android:layout_height="117dp"
+        android:background="#454E7E"
+        android:gravity="center_vertical"
+        android:text="Result of the Matrix Multiplication:"
+        android:textColor="#FAF7F7"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.892"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="406dp"
+        android:layout_height="295dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:background="#9295A1"
+        android:gravity="center"
+        android:text="-----------STATUS MESSAGE-----------"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.394" />
+
+    <Button
+        android:layout_width="412dp"
+        android:layout_height="45dp"
+        android:background="#8A9390"
+        android:onClick="findDevices"
+        android:text="Discover Nearby Devices"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.195"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="137dp"
+        android:layout_height="100dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.985"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.895"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
